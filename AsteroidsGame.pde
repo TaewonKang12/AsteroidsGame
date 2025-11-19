@@ -1,7 +1,7 @@
 //your variable declarations here
 Spaceship sig;
 Star[]stars;
-ArrayList<asteroid>ast = new ArrayList<asteroid>();
+ArrayList <asteroid> ast = new ArrayList <asteroid> ();
 public void setup() 
 {
   //your code here
