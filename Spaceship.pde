@@ -17,4 +17,20 @@ myXspeed=0;
 myYspeed=0;
 myPointDirection=0; 
 }
+public double getterX(){
+return myCenterX;
+}
+public double getterY(){
+return myCenterY;
+}
+public double getterP(){
+return myPointDirection;
+}
+public double getterSX(){
+return myXspeed;
+}
+public double getterSY(){
+return myYspeed;
+}
+}
 } 
