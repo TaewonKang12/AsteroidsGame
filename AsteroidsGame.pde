@@ -24,17 +24,6 @@ public void draw()
   for (int  i =0; i<stars.length; i++) {
     stars[i].show();
   }
-  for (int  i = ast.size()-1; i>0; i--) {
-      asteroid a = ast.get(i);
-      if (dist((float)(sig.myCenterX), (float)(sig.myCenterY), (float)(a.myCenterX), (float)(a.myCenterY))<20) {   //damage
-        ast.remove(i);
-      }
-  }
-    for (int  i = ast.size()-1; i>0; i--) {//asteroids
-      asteroid a = ast.get(i);
-      a.show();
-      a.move();
-    }
 }
 public void keyPressed() {
   if (key=='w') {
