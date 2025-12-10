@@ -28,4 +28,4 @@ return myCenterX;
 public double getterY(){
 return myCenterY;
 }
-}//ef
+}
