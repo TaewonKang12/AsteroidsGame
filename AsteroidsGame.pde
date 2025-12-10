@@ -1,7 +1,5 @@
 Spaceship sig;//ship
 Star[]stars;//background
-int score=0;//score
-int health = 3;//hp
 ArrayList <asteroid> ast = new ArrayList <asteroid> ();//asteroid
 public void setup() 
 {
@@ -30,7 +28,6 @@ public void draw()
       asteroid a = ast.get(i);
       if (dist((float)(sig.myCenterX), (float)(sig.myCenterY), (float)(a.myCenterX), (float)(a.myCenterY))<20) {   //damage
         ast.remove(i);
-        health--;
       }
   }
     for (int  i = ast.size()-1; i>0; i--) {//asteroids
@@ -38,20 +35,6 @@ public void draw()
       a.show();
       a.move();
     }
-   text("score ="+ score,10,10);
-  text("health ="+ health,740,10);//show points
-if(score==100){
-  noLoop();
-  textSize(50);
-  fill(0,255,0);
-  text("You Win", width-500, height-500);
-  }//win
-  if(health==0){
-  noLoop();
-  fill(255,0,0);
-  textSize(50);
-  text("You Lose", width-500, height-500);
-  }//lose
 }
 public void keyPressed() {
   if (key=='w') {
