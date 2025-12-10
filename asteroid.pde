@@ -57,7 +57,7 @@ myXspeed=(int)((Math.random()*6)-3);
 myYspeed=(int)((Math.random()*6)-3);
     }   
 }
-}
+}//getters
 public double getterX(){
 return myCenterX;
 }
