@@ -81,7 +81,7 @@ if(score==100){
   fill(0,255,0);
   text("You Win", width-500, height-500);
   }
-  if(health=>0){
+  if(health=<0){
   noLoop();
   fill(255,0,0);
   textSize(50);
